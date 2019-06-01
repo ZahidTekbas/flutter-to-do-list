@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class TodoList extends StatefulWidget {
   @override
@@ -9,7 +8,6 @@ class TodoList extends StatefulWidget {
 class TodoListState extends State<TodoList> {
   String _title;
   List<String> _todoItems = [];
-  List<String> _previousItems = [];
 
   Widget _buildTodoList() {
     return ListView.builder(
